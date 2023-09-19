@@ -1,0 +1,107 @@
+﻿#slider-stage {
+	width: 823px;
+	overflow:hidden;
+	height: 175px;
+	margin-left:1px;
+	float:left;
+	position:relative;
+}
+/*#slider-buttons {
+	width: 296px;
+	margin: 0 auto;
+	position:relative;
+	height:20px;
+}*/
+#slider-list {
+	width: 200px;
+	border: 0;
+	margin: 0;
+	padding: 0;
+	left: 0px;
+	position: absolute;
+}
+#slider-list a.theme {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+    background-image:url('../design/hotel-bg.jpg');
+    background-repeat:no-repeat;
+    border: 0;
+	margin-right:35px;
+		float: left;
+	width: 244px;
+	height: 163px;
+	padding-top:10px;
+	padding-left:10px;
+	position:relative;
+	cursor:pointer;
+	text-decoration:none;
+	overflow:hidden;
+}
+#slider-list a.theme:hover {
+}
+#slider-list a.theme span.nameVignette {
+	position:absolute;
+	left:19px;
+	
+	top:133px;
+	
+	bottom:0px;
+	color:#fff;
+	
+
+	
+	font-size:10px;
+}
+#slider-list a.theme:hover span.nameVignette {
+	color:#494947;
+}
+#slider-list a.theme span.changeTheme {
+	background:#363636;
+	color:#FFD200;
+	display:none;
+	font-family:Tahoma, Arial, Helvetica, sans-serif;
+	font-size:10px;
+	font-weight:bold;
+	height:16px;
+	left:0px;
+	padding:4px 0 0;
+	position:absolute;
+	text-align:center;
+	text-transform:uppercase;
+	top:0px;
+	width:120px;
+	
+}
+#slider-list a.theme:hover span.changeTheme {
+	display:block
+}
+#sliderBloc {
+	height:170px;
+	/*margin:0 auto;*/
+	width:944px;
+	overflow:hidden;
+}
+#sliderBloc a#previous, #sliderBloc a#next {
+	background:url(../design/fleche-carrousel-gauche.jpg) no-repeat left top;
+	float:left;
+	text-indent:-9999px;
+	cursor:pointer;
+	width:40px;
+	height:40px;
+	margin:55px 18px 0 0;
+}
+#sliderBloc a#next {
+	background:url(../design/fleche-carrousel-droite.jpg) no-repeat left top;
+	margin:55px 0 0 17px;
+}
+#sliderBloc a#previous:hover, #sliderBloc a#next:hover {
+	background-position:left -40px;
+}
+.demo{
+	
+	padding:0 1em 1em;
+	margin-left:0px;
+	
+	
+}

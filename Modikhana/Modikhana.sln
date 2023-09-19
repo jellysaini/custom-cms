@@ -1,0 +1,34 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.24720.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Modikhana", "Modikhana\Modikhana.csproj", "{795C27F1-EAFD-404A-9367-1ACF23AAD410}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Modikhana.BAL", "Modikhana.BAL\Modikhana.BAL.csproj", "{2D70C81A-CAFE-4D02-9D82-C65D5991B715}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Modikhana.DAL", "Modikhana.DAL\Modikhana.DAL.csproj", "{4DEDAAEF-DBD8-43FF-B9AA-69C6626C8F4D}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{795C27F1-EAFD-404A-9367-1ACF23AAD410}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{795C27F1-EAFD-404A-9367-1ACF23AAD410}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{795C27F1-EAFD-404A-9367-1ACF23AAD410}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{795C27F1-EAFD-404A-9367-1ACF23AAD410}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2D70C81A-CAFE-4D02-9D82-C65D5991B715}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2D70C81A-CAFE-4D02-9D82-C65D5991B715}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2D70C81A-CAFE-4D02-9D82-C65D5991B715}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2D70C81A-CAFE-4D02-9D82-C65D5991B715}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4DEDAAEF-DBD8-43FF-B9AA-69C6626C8F4D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4DEDAAEF-DBD8-43FF-B9AA-69C6626C8F4D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4DEDAAEF-DBD8-43FF-B9AA-69C6626C8F4D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4DEDAAEF-DBD8-43FF-B9AA-69C6626C8F4D}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

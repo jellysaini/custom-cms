@@ -1,0 +1,139 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Public.master.cs" Inherits="Modikhana.Public" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <meta http-equiv="content-language" content="en" />
+    <meta name="robots" content="all,follow" />
+    <meta name="author" lang="en" content="All: Your name [www.url.com]; e-mail: info@url.com" />
+    <meta name="copyright" lang="en" content="Webdesign: Nuvio [www.nuvio.cz]; e-mail: ahoj@nuvio.cz" />
+    <meta name="description" content="..." />
+    <meta name="keywords" content="..." />
+    <script type="text/javascript" src="BannerScript/scripts/jquery-1.6.1.min.js"></script>
+    <link rel="stylesheet" media="screen,projection" type="text/css" href="css/reset.css" />
+    <link rel="stylesheet" media="screen,projection" type="text/css" href="css/main.css" />
+    <!--[if lte IE 6]><link rel="stylesheet" type="text/css" href="css/main-msie.css" /><![endif]-->
+    <link rel="stylesheet" media="screen,projection" type="text/css" href="css/style.css" />
+    <link rel="stylesheet" media="print" type="text/css" href="css/print.css" />
+    <title>Modikhana Charitable Trust</title>
+    <link rel="shortcut icon" href="design/icons.png" />
+    <link rel="shortcut icon" href="design/icons.ico" />
+    <style type="text/css">
+        .txtWidthHeight
+        {
+            width: 240px;
+            height: 21px;
+        }
+        .txtLoginHeight
+        {
+            width: 220px;
+            height: 21px;
+        }
+        .txtAddWidthHeight
+        {
+            width: 300px;
+            height: 120px;
+        }
+        li
+        {
+            display: block;
+        }
+        label
+        {
+            font-weight: bold;
+            margin-right: 5px;
+        }
+    </style>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+    <div id="main">
+        <!-- Header -->
+        <div id="header">
+            <div style="float: left; width: 110px; height: 100px;">
+                <img alt="" src="tmp/logo.gif" />
+            </div>
+            <div style="float: left; width: 300px; height: 100px;">
+                <img style="margin-top:24px;" alt="Modikhana Charitable Trust" src="design/mct-text.png" />
+              <%--  <p style="font-size: 20px; margin-top: 35px;">
+                    Modikhana Charitable Trust</p>--%>
+            </div>
+            <!-- Navigation -->
+            <div id="nav">
+                <a href="Default.aspx">Home</a> <span>|</span>
+                <%
+                    if (Session["UserId"] == null)
+                    {
+                        Response.Write("<a href='MemberLogin.aspx'>Login</a> <span>|</span>");
+                        Response.Write("<a href='MemberRegistration.aspx'>Register</a> <span>|</span>");
+                    }
+                %>
+                <asp:LinkButton runat="server" Text="Change Password" ID="lnkChangePwd" OnClick="lnkChangePwd_Click"></asp:LinkButton><span
+                    runat="server" id="sp1">|</span>
+                <asp:LinkButton runat="server" Text="Profile" ID="lnkProfile" OnClick="lnkProfile_Click"></asp:LinkButton><span
+                    runat="server" id="sp2">|</span>
+                <asp:LinkButton runat="server" Text="Logout" ID="lnkLogout" OnClick="lnkLogout_Click"></asp:LinkButton><span
+                    runat="server" id="sp">|</span> <a href="Feedback.aspx">Feedback</a><span>|</span>
+                <a href="SiteMap.aspx">Site Map</a>
+            </div>
+            <!-- /nav -->
+        </div>
+        <!-- /header -->
+        <!-- Tray -->
+        <div id="tray">
+            <ul>
+                <li id="Home"><a href="Default.aspx">Home</a></li>
+                <!-- Active page -->
+                <li id="OurWork"><a href="OurWork.aspx">Our Work</a></li>
+                <li id="NewsRoom"><a href="NewsRoom.aspx">News Room</a></li>
+                <li id="Event"><a href="Event.aspx">Events</a></li>
+                <%
+                    if (Session["UserId"] != null)
+                    {
+                        Response.Write("<li><a href='OurHelp.aspx'>Social Help</a></li>");
+                    }
+                %>
+                <li id="Forums"><a href='Forums.aspx'>Forums</a></li>
+                <li id="Donation"><a href="Donation.aspx">Donation</a></li>
+                <li id="About"><a href="AboutUs.aspx">About Us</a></li>
+                <li id="Contact"><a href="ContactUs.aspx">Contact Us</a></li>
+            </ul>
+        </div>
+        <!-- /tray -->
+        <!-- Promo -->
+        <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+        </asp:ContentPlaceHolder>
+        <!-- Footer -->
+        <div id="footer">
+            <p>
+                Copyright &copy;&nbsp;2011 <strong><a href="#">Modi Khana Charitable Trust</a></strong>,
+                All Rights Reserved &reg;</p>
+        </div>
+        <!-- /footer -->
+    </div>
+    </form>
+    <script type="text/javascript">
+        $('#tray ul li').each(function () {
+            var url = $(this).children().attr('href');
+
+            if (url == "<%Response.Write(Request.Url.AbsolutePath.ToString().Substring(1)); %>") {
+                $(this).addClass("tray-active");
+            }
+
+        });
+    </script>
+    <script type="text/javascript">
+        $('#nav a').each(function () {
+            var url = $(this).attr('href');
+
+            if (url == "<%Response.Write(Request.Url.AbsolutePath.ToString().Substring(1)); %>") {
+                $(this).addClass("nav-active");
+                $("#Home").addClass("tray-active");
+            }
+        })
+    </script>
+</body>
+</html>

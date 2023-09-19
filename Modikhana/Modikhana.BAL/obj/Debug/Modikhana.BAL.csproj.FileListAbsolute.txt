@@ -1,0 +1,21 @@
+E:\Project\Dot Net Project\Modikhana\Modikhana\Modikhana.BAL\obj\Debug\ResolveAssemblyReference.cache
+E:\Project\Dot Net Project\Modikhana\Modikhana\Modikhana.BAL\bin\Debug\Modikhana.BAL.dll
+E:\Project\Dot Net Project\Modikhana\Modikhana\Modikhana.BAL\bin\Debug\Modikhana.BAL.pdb
+E:\Project\Dot Net Project\Modikhana\Modikhana\Modikhana.BAL\obj\Debug\Modikhana.BAL.dll
+E:\Project\Dot Net Project\Modikhana\Modikhana\Modikhana.BAL\obj\Debug\Modikhana.BAL.pdb
+E:\Project\Dot Net Project\Modikhana\Modikhana\Modikhana.BAL\bin\Debug\Modikhana.DAL.dll
+E:\Project\Dot Net Project\Modikhana\Modikhana\Modikhana.BAL\bin\Debug\Modikhana.DAL.pdb
+E:\Project\DotNetProject\Modikhana\Modikhana\Modikhana.BAL\bin\Debug\Modikhana.BAL.dll
+E:\Project\DotNetProject\Modikhana\Modikhana\Modikhana.BAL\bin\Debug\Modikhana.BAL.pdb
+E:\Project\DotNetProject\Modikhana\Modikhana\Modikhana.BAL\bin\Debug\Modikhana.DAL.dll
+E:\Project\DotNetProject\Modikhana\Modikhana\Modikhana.BAL\bin\Debug\Modikhana.DAL.pdb
+E:\Project\DotNetProject\Modikhana\Modikhana\Modikhana.BAL\obj\Debug\Modikhana.BAL.csprojResolveAssemblyReference.cache
+E:\Project\DotNetProject\Modikhana\Modikhana\Modikhana.BAL\obj\Debug\Modikhana.BAL.dll
+E:\Project\DotNetProject\Modikhana\Modikhana\Modikhana.BAL\obj\Debug\Modikhana.BAL.pdb
+F:\Project Work\Project\2014-2015\DotNetProject\Modikhana\Modikhana\Modikhana.BAL\bin\Debug\Modikhana.BAL.dll
+F:\Project Work\Project\2014-2015\DotNetProject\Modikhana\Modikhana\Modikhana.BAL\bin\Debug\Modikhana.BAL.pdb
+F:\Project Work\Project\2014-2015\DotNetProject\Modikhana\Modikhana\Modikhana.BAL\bin\Debug\Modikhana.DAL.dll
+F:\Project Work\Project\2014-2015\DotNetProject\Modikhana\Modikhana\Modikhana.BAL\bin\Debug\Modikhana.DAL.pdb
+F:\Project Work\Project\2014-2015\DotNetProject\Modikhana\Modikhana\Modikhana.BAL\obj\Debug\Modikhana.BAL.csprojResolveAssemblyReference.cache
+F:\Project Work\Project\2014-2015\DotNetProject\Modikhana\Modikhana\Modikhana.BAL\obj\Debug\Modikhana.BAL.dll
+F:\Project Work\Project\2014-2015\DotNetProject\Modikhana\Modikhana\Modikhana.BAL\obj\Debug\Modikhana.BAL.pdb

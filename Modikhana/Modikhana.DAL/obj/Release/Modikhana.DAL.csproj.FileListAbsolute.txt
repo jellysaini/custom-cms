@@ -1,0 +1,5 @@
+F:\Project Work\Project\2014-2015\DotNetProject\Modikhana\Modikhana\Modikhana.DAL\bin\Release\Modikhana.DAL.dll.config
+F:\Project Work\Project\2014-2015\DotNetProject\Modikhana\Modikhana\Modikhana.DAL\bin\Release\Modikhana.DAL.dll
+F:\Project Work\Project\2014-2015\DotNetProject\Modikhana\Modikhana\Modikhana.DAL\bin\Release\Modikhana.DAL.pdb
+F:\Project Work\Project\2014-2015\DotNetProject\Modikhana\Modikhana\Modikhana.DAL\obj\Release\Modikhana.DAL.dll
+F:\Project Work\Project\2014-2015\DotNetProject\Modikhana\Modikhana\Modikhana.DAL\obj\Release\Modikhana.DAL.pdb

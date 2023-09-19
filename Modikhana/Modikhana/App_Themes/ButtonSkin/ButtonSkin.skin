@@ -1,0 +1,45 @@
+﻿<%--
+Default skin template. The following skins are provided as examples only.
+
+1. Named control skin. The SkinId should be uniquely defined because
+   duplicate SkinId's per control type are not allowed in the same theme.
+
+<asp:GridView runat="server" SkinId="gridviewSkin" BackColor="White" >
+   <AlternatingRowStyle BackColor="Blue" />
+</asp:GridView>
+
+2. Default skin. The SkinId is not defined. Only one default 
+   control skin per control type is allowed in the same theme.
+
+<asp:Image runat="server" ImageUrl="~/images/image1.jpg" />
+--%>
+<asp:ImageButton runat="server" SkinID="GridEditButton" 
+	AlternateText="Edit" ToolTip="Edit"
+	ImageUrl="~/admin/img/edit.jpg"/>
+
+<asp:ImageButton runat="server" SkinID="GridDeleteButton" 
+	AlternateText="Delete" ToolTip="Delete"
+	ImageUrl="~/admin/img/cancel.jpg"/>
+
+<asp:ImageButton runat="server" SkinID="GridReplyButton" 
+	AlternateText="Edit" ToolTip="Reply"
+	ImageUrl="~/admin/img/reply.png"/>
+
+<asp:ImageButton runat="server" SkinID="GridTopicDeleteButton" 
+	AlternateText="Delete Comment" ToolTip="Delete Comment"
+	ImageUrl="~/admin/img/delete.png"/>
+
+<asp:Button runat="server" SkinID="NormalButton"  onmouseover="this.style.color='SeaGreen'; this.style.backgroundColor='White'; this.style.borderColor='DodgerBlue';"
+      onmouseout="this.style.color='RoyalBlue';this.style.backgroundColor='White';this.style.borderColor='LightSteelBlue';"
+      Font-Bold="true" Font-Size="13px" Width="75" BackColor="White" ForeColor="RoyalBlue"
+      Height="28" />
+
+<asp:Button runat="server" SkinID="ChgPawdButton"  onmouseover="this.style.color='SeaGreen'; this.style.backgroundColor='White'; this.style.borderColor='DodgerBlue';"
+      onmouseout="this.style.color='RoyalBlue';this.style.backgroundColor='White';this.style.borderColor='LightSteelBlue';"
+      Font-Bold="true" Font-Size="13px" Width="130" BackColor="White" ForeColor="RoyalBlue"
+      Height="28" />
+
+<asp:Button runat="server" SkinID="BigWidth"  onmouseover="this.style.color='SeaGreen'; this.style.backgroundColor='White'; this.style.borderColor='DodgerBlue';"
+      onmouseout="this.style.color='RoyalBlue';this.style.backgroundColor='White';this.style.borderColor='LightSteelBlue';"
+      Font-Bold="true" Font-Size="13px" Width="150" BackColor="White" ForeColor="RoyalBlue"
+      Height="28" />

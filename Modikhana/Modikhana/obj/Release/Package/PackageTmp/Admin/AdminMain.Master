@@ -1,0 +1,179 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="AdminMain.master.cs"
+    Inherits="Modikhana.Admin.AdminMain" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title>Modikhana Charitable Trust</title>
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
+    <meta name="robots" content="index,follow" />
+    <link rel="stylesheet" type="text/css" media="all" href="css/style.css" />
+    <link rel="shortcut icon" href="../design/icons.png" />
+    <link rel="shortcut icon" href="../design/icons.ico" />
+    <%--    <link rel="Stylesheet" type="text/css" href="css/smoothness/jquery-ui-1.7.1.custom.css" />
+    <link rel="stylesheet" type="text/css" href="markitup/skins/markitup/style.css" />
+    <link rel="stylesheet" type="text/css" href="markitup/sets/default/style.css" />--%>
+    <link rel="stylesheet" type="text/css" href="css/superfish.css" media="screen">
+    <script type="text/javascript" src="js/jquery-1.3.2.min.js"></script>
+    <script type="text/javascript" src="js/jquery-ui-1.7.1.custom.min.js"></script>
+    <script type="text/javascript" src="js/hoverIntent.js"></script>
+    <script type="text/javascript" src="js/superfish.js"></script>
+    <script type="text/javascript">
+        // initialise plugins
+        jQuery(function () {
+            jQuery('ul.sf-menu').superfish();
+        });
+
+    </script>
+    <%-- <script type="text/javascript" src="js/excanvas.pack.js"></script>
+    <script type="text/javascript" src="js/jquery.flot.pack.js"></script>
+    <script type="text/javascript" src="markitup/jquery.markitup.pack.js"></script>
+    <script type="text/javascript" src="markitup/sets/default/set.js"></script>
+    <script type="text/javascript" src="js/custom.js"></script>--%>
+    <style>
+        .middle
+        {
+            vertical-align: middle;
+        }
+    </style>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form runat="server" id="MainForm">
+    <div class="container" id="container">
+        <div id="header">
+            <div id="profile_info">
+                <img src="img/avatar.jpg" id="avatar" alt="avatar" />
+                <p>
+                    Modikhana Charitable Trust</p>
+                <p>
+                    Login mode is admin &nbsp;<asp:LinkButton runat="server" ID="lnkLogout" OnClick="lnkLogout_Click">Log out?</asp:LinkButton></p>
+                <p class="last_login">
+                    Welcome&nbsp;
+                    <%
+                        Response.Write(Session["FirstName"].ToString());
+                    %>
+                </p>
+            </div>
+            <div id="logo">
+                <h1>
+                    <a href="/">AdmintTheme</a></h1>
+            </div>
+        </div>
+        <!-- end header -->
+        <div id="content">
+            <div id="top_menu" class="clearfix">
+                <ul class="sf-menu">
+                    <!-- DROPDOWN MENU -->
+                    <li class="current"><a href="Default.aspx">Dashboard</a><!-- First level MENU -->
+                    </li>
+                    <li><a href="#">Content Mangement</a>
+                        <ul>
+                            <li><a href="PagesList.aspx">Pages List</a></li>
+                            <li><a href="AddPage.aspx">Add New Page</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">Users</a>
+                        <ul>
+                            <li><a href="UserList.aspx">Users List</a></li>
+                            <li><a href="AddUser.aspx">Add New User</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">Options</a>
+                        <ul>
+                            <li><a href="#">Banner</a>
+                                <ul>
+                                    <li><a href="BannerList.aspx">Banner List</a></li>
+                                    <li><a href="AddBanner.aspx">Add&nbsp;New&nbsp;Banner</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#">Our Work</a>
+                                <ul>
+                                    <li><a href="OurWorkList.aspx">Our Work List</a></li>
+                                    <li><a href="AddOurWork.aspx">Add&nbsp;New&nbsp;Work</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#">Event</a>
+                                <ul>
+                                    <li><a href="EventList.aspx">Event List</a></li>
+                                    <li><a href="AddEvent.aspx">Add&nbsp;New&nbsp;Event</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#">News</a>
+                                <ul>
+                                    <li><a href="NewsList.aspx">News List</a></li>
+                                    <li><a href="AddNews.aspx">Add&nbsp;New&nbsp;News</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#">Contact Detail</a>
+                                <ul>
+                                    <li><a href="ContactDetailList.aspx">Contact Detail List</a> </li>
+                                    <li><a href="AddContactDetail.aspx">Add Contact Detail</a> </li>
+                                </ul>
+                            </li>
+                            <li><a href="#">Supposers</a>
+                                <ul>
+                                    <li><a href="AddSupposer.aspx">Add Supposer</a></li>
+                                    <li><a href="SupposerList.aspx">Supposers List</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                    <li><a href="#">Discussion Topics</a>
+                        <ul>
+                            <li><a href="DiscussionTopicsList.aspx">Topics&nbsp;List</a></li>
+                            <li><a href="AddDiscussionTopics.aspx">Add&nbsp;Topic</a></li>
+                            <li><a href="TopicComment.aspx">Topic&nbsp;Comment</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">Setting</a>
+                        <ul>
+                            <li><a href="EmailSetting.aspx">Email Setting</a> </li>
+                            <li><a href="PayPalInfo.aspx">PayPal Setting</a> </li>
+                            <li><a href="ChangePassword.aspx">Change&nbsp;Password</a> </li>
+                        </ul>
+                    </li>
+                    <li><a href="#">Donation</a>
+                        <ul>
+                            <li><a href="#">Bank Detail</a>
+                                <ul>
+                                    <li><a href="BankDetailList.aspx">Bank Detail List</a> </li>
+                                    <li><a href="AddBankDetail.aspx">Add Bank Detail</a> </li>
+                                </ul>
+                            </li>
+                            <li><a href="#">Donation By Bank</a>
+                                <ul>
+                                    <li><a href="DonationList.aspx">Donation List</a> </li>
+                                    <li><a href="AddDonation.aspx">Add Donation</a> </li>
+                                </ul>
+                            </li>
+                            <li><a href="PayPalDonation.aspx">PayPal Donation</a> </li>
+                        </ul>
+                    </li>
+                    <li><a href="#">Messages</a>
+                        <ul>
+                            <li><a href="Feedback.aspx">Feedback</a> </li>
+                            <li><a href="ContactUs.aspx">Contact Us</a> </li>
+                            <li><a href="HelpMe.aspx">Help Me !</a> </li>
+                        </ul>
+                    </li>
+                </ul>
+                <a href="../Default.aspx" target="_blank" id="visit" class="right">Visit site</a>
+            </div>
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+            <!-- end #content_main -->
+        </div>
+        <!-- end #content -->
+        <div id="footer" class="clearfix">
+            <p class="right">
+                Powered By 'Niron Technologies'</p>
+        </div>
+        <!-- end #footer -->
+    </div>
+    <!-- end container -->
+    </form>
+</body>
+</html>

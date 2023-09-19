@@ -1,0 +1,339 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="Modikhana" Class="ModikhanaDataDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="AppSettings" ConnectionString="Data Source=jelly-pc;Initial Catalog=Modikhana;User ID=sa" SettingsObjectName="Modikhana.DAL.Properties.Settings" SettingsPropertyName="ModikhanaConnectionString" Provider="System.Data.SqlClient" />
+  <Table Name="dbo.tblBanner" Member="tblBanners">
+    <Type Name="tblBanner">
+      <Column Name="ID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="BannerName" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="BannerDescription" Type="System.String" DbType="VarChar(1000)" CanBeNull="true" />
+      <Column Name="BannerImagePath" Type="System.String" DbType="VarChar(400)" CanBeNull="true" />
+      <Column Name="BannerOrder" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="BannerStatus" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.tblUsers" Member="tblUsers">
+    <Type Name="tblUser">
+      <Column Name="ID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="FirstName" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="LastName" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="EmailAddress" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="LoginName" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="UserPassword" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="UserAddress" Type="System.String" DbType="VarChar(500)" CanBeNull="true" />
+      <Column Name="Mobile" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="Phone" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="CountryName" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="StateName" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="CityName" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="UserRole" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="UserStatus" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Association Name="tblUser_tblDiscussionTopic" Member="tblDiscussionTopics" ThisKey="ID" OtherKey="CreatedBy" Type="tblDiscussionTopic" />
+      <Association Name="tblUser_tblHelp" Member="tblHelps" ThisKey="ID" OtherKey="UserId" Type="tblHelp" />
+      <Association Name="tblUser_tblTopicComment" Member="tblTopicComments" ThisKey="ID" OtherKey="UserId" Type="tblTopicComment" />
+    </Type>
+  </Table>
+  <Table Name="dbo.tblContactDetail" Member="tblContactDetails">
+    <Type Name="tblContactDetail">
+      <Column Name="ID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="OfficeLocation" Type="System.String" DbType="VarChar(150)" CanBeNull="true" />
+      <Column Name="Address" Type="System.String" DbType="VarChar(250)" CanBeNull="true" />
+      <Column Name="City" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="State" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="Telephone" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="Mobile" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="Email" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.tblContactUs" Member="tblContactUs">
+    <Type Name="tblContactUs">
+      <Column Name="ID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="UserName" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="UserEmail" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="ContactUsMessage" Type="System.String" DbType="VarChar(1000)" CanBeNull="true" />
+      <Column Name="ContactUsDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.tblContentManagement" Member="tblContentManagements">
+    <Type Name="tblContentManagement">
+      <Column Name="ID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="LinkName" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="LinkContent" Type="System.String" DbType="VarChar(MAX)" CanBeNull="true" />
+      <Column Name="LinkOrder" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="LinkStatus" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.tblDiscussionTopic" Member="tblDiscussionTopics">
+    <Type Name="tblDiscussionTopic">
+      <Column Name="ID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="TopicName" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="TopicDescription" Type="System.String" DbType="VarChar(2000)" CanBeNull="true" />
+      <Column Name="CreatedBy" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="CreateedOn" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="TopicStatus" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Association Name="tblUser_tblDiscussionTopic" Member="tblUser" ThisKey="CreatedBy" OtherKey="ID" Type="tblUser" IsForeignKey="true" DeleteRule="CASCADE" />
+    </Type>
+  </Table>
+  <Table Name="dbo.tblDonationDetail" Member="tblDonationDetails">
+    <Type Name="tblDonationDetail">
+      <Column Name="ID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="Name" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="Purpose" Type="System.String" DbType="VarChar(500)" CanBeNull="true" />
+      <Column Name="Ammount" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="ReceiptNo" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="DonationDate" Type="System.DateTime" DbType="Date" CanBeNull="true" />
+      <Column Name="DonationType" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.tblEmailSetting" Member="tblEmailSettings">
+    <Type Name="tblEmailSetting">
+      <Column Name="ID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="UserName" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="EmailPassword" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="IncomingMailServer" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="OutgoingMailServer" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="IsSSLEnabled" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="IncomingPort" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="OutgoingPort" Type="System.Int32" DbType="Int" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.tblEvent" Member="tblEvents">
+    <Type Name="tblEvent">
+      <Column Name="ID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="EventName" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="EventDescription" Type="System.String" DbType="VarChar(1000)" CanBeNull="true" />
+      <Column Name="EventStartDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="EventEndDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="EventStatus" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.tblFeedback" Member="tblFeedbacks">
+    <Type Name="tblFeedback">
+      <Column Name="ID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="UserName" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="UserEmail" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="FeedbackMessage" Type="System.String" DbType="VarChar(1000)" CanBeNull="true" />
+      <Column Name="FeedbackDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.tblHelp" Member="tblHelps">
+    <Type Name="tblHelp">
+      <Column Name="ID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="UserId" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="HelpDEscription" Type="System.String" DbType="VarChar(1000)" CanBeNull="true" />
+      <Column Name="HelpPostDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Association Name="tblUser_tblHelp" Member="tblUser" ThisKey="UserId" OtherKey="ID" Type="tblUser" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.tblNews" Member="tblNews">
+    <Type Name="tblNew">
+      <Column Name="ID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="NewsName" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="NewsDescription" Type="System.String" DbType="VarChar(MAX)" CanBeNull="true" />
+      <Column Name="NewsImagePath" Type="System.String" DbType="VarChar(400)" CanBeNull="true" />
+      <Column Name="NewsOrder" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="NewsStatus" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.tblOnlineBankInfo" Member="tblOnlineBankInfos">
+    <Type Name="tblOnlineBankInfo">
+      <Column Name="ID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="BankName" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="AccountHolder" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="AccountType" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="AccountNo" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="Branch" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="IFSCCode" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="Status" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.tblOurWork" Member="tblOurWorks">
+    <Type Name="tblOurWork">
+      <Column Name="ID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="WorkName" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="WorkDescription" Type="System.String" DbType="VarChar(MAX)" CanBeNull="true" />
+      <Column Name="WorkImagePath" Type="System.String" DbType="VarChar(400)" CanBeNull="true" />
+      <Column Name="WorkOrder" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="WorkStatus" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.tblPaymentGatewayDetail" Member="tblPaymentGatewayDetails">
+    <Type Name="tblPaymentGatewayDetail">
+      <Column Name="ID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="PaymentGatewayName" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="BusineesEmail" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="OrganizationName" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="PDTToken" Type="System.String" DbType="VarChar(300)" CanBeNull="true" />
+      <Column Name="Status" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.tblPayPalReceipt" Member="tblPayPalReceipts">
+    <Type Name="tblPayPalReceipt">
+      <Column Name="ID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="TransactionID" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="Email" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="FirstName" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="LastName" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="Ammount" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="DonationDate" Type="System.DateTime" DbType="Date" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.tblSupposer" Member="tblSupposers">
+    <Type Name="tblSupposer">
+      <Column Name="ID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="SupposerName" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="SupposerImagePath" Type="System.String" DbType="VarChar(1000)" CanBeNull="true" />
+      <Column Name="SupposerStatus" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.tblTopicComments" Member="tblTopicComments">
+    <Type Name="tblTopicComment">
+      <Column Name="ID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="TopicId" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="UserId" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="TopicComment" Type="System.String" DbType="VarChar(2000)" CanBeNull="true" />
+      <Column Name="CreateedOn" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Association Name="tblUser_tblTopicComment" Member="tblUser" ThisKey="UserId" OtherKey="ID" Type="tblUser" IsForeignKey="true" DeleteRule="CASCADE" />
+    </Type>
+  </Table>
+  <Function Name="dbo.DashboardTotal" Method="DashboardTotal">
+    <ElementType Name="DashboardTotalResult">
+      <Column Name="[user]" Member="user" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="pages" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="banner" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="outwork" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="event" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="news" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="contactdetail" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="supposer" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="donation" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="feedback" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="contactus" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="help" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="activepost" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="inactivepost" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="comments" Type="System.Int32" DbType="Int" CanBeNull="true" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.SelectPayPalReceiptByID" Method="SelectPayPalReceiptByID">
+    <Parameter Name="Id" Parameter="id" Type="System.Int32" DbType="Int" />
+    <ElementType Name="SelectPayPalReceiptByIDResult">
+      <Column Name="ID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="ReceiptNo" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="Name" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="DonationType" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="Purpose" Type="System.String" DbType="VarChar(500)" CanBeNull="true" />
+      <Column Name="Ammount" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="DonationDate" Type="System.DateTime" DbType="Date" CanBeNull="true" />
+      <Column Name="TransactionID" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="PEmail" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="FirstName" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="LastName" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.SavePayPalReceipt" Method="SavePayPalReceipt">
+    <Parameter Name="PTransactionID" Parameter="pTransactionID" Type="System.String" DbType="VarChar(100)" />
+    <Parameter Name="PEmail" Parameter="pEmail" Type="System.String" DbType="VarChar(100)" />
+    <Parameter Name="PFirstName" Parameter="pFirstName" Type="System.String" DbType="VarChar(50)" />
+    <Parameter Name="PLastName" Parameter="pLastName" Type="System.String" DbType="VarChar(50)" />
+    <Parameter Name="PAmmount" Parameter="pAmmount" Type="System.String" DbType="VarChar(50)" />
+    <Parameter Name="DonationDate" Parameter="donationDate" Type="System.DateTime" DbType="Date" />
+    <Parameter Name="Name" Parameter="name" Type="System.String" DbType="VarChar(100)" />
+    <Parameter Name="Purpose" Parameter="purpose" Type="System.String" DbType="VarChar(500)" />
+    <Parameter Name="Ammount" Parameter="ammount" Type="System.String" DbType="VarChar(50)" />
+    <Parameter Name="DonationType" Parameter="donationType" Type="System.String" DbType="VarChar(50)" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.SelectAllDiscussionTopic" Method="SelectAllDiscussionTopic">
+    <ElementType Name="SelectAllDiscussionTopicResult">
+      <Column Name="LoginName" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="CreatedBy" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="CreateedOn" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="ID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="TopicDescription" Type="System.String" DbType="VarChar(2000)" CanBeNull="true" />
+      <Column Name="TopicName" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="TopicStatus" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.SelectAllDiscussionTopicByCreatedBy" Method="SelectAllDiscussionTopicByCreatedBy">
+    <Parameter Name="CreatedBy" Parameter="createdBy" Type="System.Int32" DbType="Int" />
+    <ElementType Name="SelectAllDiscussionTopicByCreatedByResult">
+      <Column Name="LoginName" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="CreatedBy" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="CreateedOn" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="ID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="TopicDescription" Type="System.String" DbType="VarChar(2000)" CanBeNull="true" />
+      <Column Name="TopicName" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="TopicStatus" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.SelectAllPayPalReceipt" Method="SelectAllPayPalReceipt">
+    <ElementType Name="SelectAllPayPalReceiptResult">
+      <Column Name="ID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="ReceiptNo" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="Name" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="DonationType" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="Purpose" Type="System.String" DbType="VarChar(500)" CanBeNull="true" />
+      <Column Name="Ammount" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="DonationDate" Type="System.DateTime" DbType="Date" CanBeNull="true" />
+      <Column Name="TransactionID" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="PEmail" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="FirstName" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="LastName" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.SelectAllTopicComment" Method="SelectAllTopicComment">
+    <ElementType Name="SelectAllTopicCommentResult">
+      <Column Name="LoginName" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="CreateedOn" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="ID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="TopicComment" Type="System.String" DbType="VarChar(2000)" CanBeNull="true" />
+      <Column Name="TopicId" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="UserId" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="TopicName" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.SelectAllTopicCommentById" Method="SelectAllTopicCommentById">
+    <Parameter Name="ID" Parameter="iD" Type="System.Int32" DbType="Int" />
+    <ElementType Name="SelectAllTopicCommentByIdResult">
+      <Column Name="LoginName" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="CreateedOn" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="ID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="TopicComment" Type="System.String" DbType="VarChar(2000)" CanBeNull="true" />
+      <Column Name="TopicId" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="UserId" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="TopicName" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.SelectDiscusstionTopicById" Method="SelectDiscusstionTopicById">
+    <Parameter Name="Id" Parameter="id" Type="System.Int32" DbType="Int" />
+    <ElementType Name="SelectDiscusstionTopicByIdResult">
+      <Column Name="LoginName" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="CreatedBy" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="CreateedOn" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="ID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="TopicDescription" Type="System.String" DbType="VarChar(2000)" CanBeNull="true" />
+      <Column Name="TopicName" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="TopicStatus" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.SelectOurHelp" Method="SelectOurHelp">
+    <ElementType Name="SelectOurHelpResult">
+      <Column Name="FirstName" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="LastName" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="EmailAddress" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="ID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="HelpPostDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="HelpDEscription" Type="System.String" DbType="VarChar(1000)" CanBeNull="true" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.SelectOurHelpById" Method="SelectOurHelpById">
+    <Parameter Name="Id" Parameter="id" Type="System.Int32" DbType="Int" />
+    <ElementType Name="SelectOurHelpByIdResult">
+      <Column Name="FirstName" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="LastName" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="EmailAddress" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="ID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="HelpPostDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="HelpDEscription" Type="System.String" DbType="VarChar(1000)" CanBeNull="true" />
+    </ElementType>
+  </Function>
+</Database>

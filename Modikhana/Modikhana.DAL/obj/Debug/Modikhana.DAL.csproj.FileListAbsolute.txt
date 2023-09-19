@@ -1,0 +1,18 @@
+E:\Project\Dot Net Project\Modikhana\Modikhana\Modikhana.DAL\obj\Debug\ResolveAssemblyReference.cache
+E:\Project\Dot Net Project\Modikhana\Modikhana\Modikhana.DAL\bin\Debug\Modikhana.DAL.dll.config
+E:\Project\Dot Net Project\Modikhana\Modikhana\Modikhana.DAL\bin\Debug\Modikhana.DAL.dll
+E:\Project\Dot Net Project\Modikhana\Modikhana\Modikhana.DAL\bin\Debug\Modikhana.DAL.pdb
+E:\Project\Dot Net Project\Modikhana\Modikhana\Modikhana.DAL\obj\Debug\Modikhana.DAL.dll
+E:\Project\Dot Net Project\Modikhana\Modikhana\Modikhana.DAL\obj\Debug\Modikhana.DAL.pdb
+E:\Project\DotNetProject\Modikhana\Modikhana\Modikhana.DAL\bin\Debug\Modikhana.DAL.dll.config
+E:\Project\DotNetProject\Modikhana\Modikhana\Modikhana.DAL\bin\Debug\Modikhana.DAL.dll
+E:\Project\DotNetProject\Modikhana\Modikhana\Modikhana.DAL\bin\Debug\Modikhana.DAL.pdb
+E:\Project\DotNetProject\Modikhana\Modikhana\Modikhana.DAL\obj\Debug\Modikhana.DAL.dll
+E:\Project\DotNetProject\Modikhana\Modikhana\Modikhana.DAL\obj\Debug\Modikhana.DAL.pdb
+E:\Project\DotNetProject\Modikhana\Modikhana\Modikhana.DAL\obj\Debug\Modikhana.DAL.csprojResolveAssemblyReference.cache
+F:\Project Work\Project\2014-2015\DotNetProject\Modikhana\Modikhana\Modikhana.DAL\bin\Debug\Modikhana.DAL.dll.config
+F:\Project Work\Project\2014-2015\DotNetProject\Modikhana\Modikhana\Modikhana.DAL\bin\Debug\Modikhana.DAL.dll
+F:\Project Work\Project\2014-2015\DotNetProject\Modikhana\Modikhana\Modikhana.DAL\bin\Debug\Modikhana.DAL.pdb
+F:\Project Work\Project\2014-2015\DotNetProject\Modikhana\Modikhana\Modikhana.DAL\obj\Debug\Modikhana.DAL.csprojResolveAssemblyReference.cache
+F:\Project Work\Project\2014-2015\DotNetProject\Modikhana\Modikhana\Modikhana.DAL\obj\Debug\Modikhana.DAL.dll
+F:\Project Work\Project\2014-2015\DotNetProject\Modikhana\Modikhana\Modikhana.DAL\obj\Debug\Modikhana.DAL.pdb

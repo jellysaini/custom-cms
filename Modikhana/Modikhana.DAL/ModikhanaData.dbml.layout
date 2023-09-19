@@ -1,0 +1,135 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ordesignerObjectsDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 15, 13.375" name="ModikhanaData">
+  <DataContextMoniker Name="/ModikhanaDataDataContext" />
+  <nestedChildShapes>
+    <classShape Id="4b179f9e-75ca-4e62-be49-5853b19e3f6a" absoluteBounds="6.75, 0.75, 2, 1.9631982421875003">
+      <DataClassMoniker Name="/ModikhanaDataDataContext/tblBanner" />
+      <nestedChildShapes>
+        <elementListCompartment Id="f44a74af-66f1-4153-888a-01406de7287d" absoluteBounds="6.765, 1.21, 1.9700000000000002, 1.4031982421875" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="1a10cf42-e9c0-4b5f-83d7-07364d7906a5" absoluteBounds="0.75, 2.875, 2, 3.5016097005208326">
+      <DataClassMoniker Name="/ModikhanaDataDataContext/tblUser" />
+      <nestedChildShapes>
+        <elementListCompartment Id="ff561929-fd93-4348-ba9f-76ca64585ecc" absoluteBounds="0.765, 3.335, 1.9700000000000002, 2.941609700520833" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="4eb0dfd7-ad07-41c6-bfbb-1ef92148d5a0" absoluteBounds="6.75, 3.75, 2, 2.347801106770834">
+      <DataClassMoniker Name="/ModikhanaDataDataContext/tblContactDetail" />
+      <nestedChildShapes>
+        <elementListCompartment Id="4940bf28-875f-46c2-ac6a-401ff1a2a0fe" absoluteBounds="6.765, 4.21, 1.9700000000000002, 1.7878011067708335" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="81ba3883-7530-4986-8035-591e2d0e1279" absoluteBounds="6.75, 7.75, 2, 1.7708968098958335">
+      <DataClassMoniker Name="/ModikhanaDataDataContext/tblContactUs" />
+      <nestedChildShapes>
+        <elementListCompartment Id="79e7d8e6-e916-4c8b-9378-d3c50bcdc935" absoluteBounds="6.765, 8.21, 1.9700000000000002, 1.2108968098958333" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="24d5d7e5-c281-496b-a5fe-e38e239e2573" absoluteBounds="0.75, 8.75, 2, 1.7708968098958344">
+      <DataClassMoniker Name="/ModikhanaDataDataContext/tblContentManagement" />
+      <nestedChildShapes>
+        <elementListCompartment Id="97c2e860-2b52-4f81-bc7d-f709040143eb" absoluteBounds="0.765, 9.21, 1.9700000000000002, 1.2108968098958333" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="44229ac7-0b70-4a15-958e-0f84ad58f85b" absoluteBounds="3.5, 6, 2, 1.9631982421875005">
+      <DataClassMoniker Name="/ModikhanaDataDataContext/tblDiscussionTopic" />
+      <nestedChildShapes>
+        <elementListCompartment Id="26e4be58-4a3f-4fb8-9b2b-58dc2356f2c2" absoluteBounds="3.515, 6.46, 1.9700000000000002, 1.4031982421875" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="86f21b5b-bc0c-4e94-a472-9cf16fa3a628" absoluteBounds="9.75, 0.75, 2, 2.1554996744791666">
+      <DataClassMoniker Name="/ModikhanaDataDataContext/tblDonationDetail" />
+      <nestedChildShapes>
+        <elementListCompartment Id="bccd8477-b381-426a-b856-262aa7b98c9e" absoluteBounds="9.765, 1.21, 1.9700000000000002, 1.5954996744791665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="d77e24e7-b749-451f-87ec-68e1a406b68b" absoluteBounds="9.75, 3.75, 2, 2.347801106770834">
+      <DataClassMoniker Name="/ModikhanaDataDataContext/tblEmailSetting" />
+      <nestedChildShapes>
+        <elementListCompartment Id="75f42305-37c5-48ea-9e5d-97da03969b99" absoluteBounds="9.765, 4.21, 1.9700000000000002, 1.7878011067708335" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="386976d9-87f1-4c99-a909-ccf35e6e11b9" absoluteBounds="9.75, 7.75, 2, 1.9631982421874996">
+      <DataClassMoniker Name="/ModikhanaDataDataContext/tblEvent" />
+      <nestedChildShapes>
+        <elementListCompartment Id="fe562794-3f06-46d1-8840-723e92c6fc3d" absoluteBounds="9.765, 8.21, 1.9700000000000002, 1.4031982421875" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="b8b7394e-f78c-43d5-8e45-4102a4bd51f9" absoluteBounds="3.75, 10.75, 2, 1.7708968098958344">
+      <DataClassMoniker Name="/ModikhanaDataDataContext/tblFeedback" />
+      <nestedChildShapes>
+        <elementListCompartment Id="28160d91-0904-4b0f-b316-8ccfc0d8b652" absoluteBounds="3.765, 11.21, 1.9700000000000002, 1.2108968098958333" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="e017f3dd-aabb-4989-a5bc-3634f159fe61" absoluteBounds="3.5, 1.125, 2, 1.5785953776041666">
+      <DataClassMoniker Name="/ModikhanaDataDataContext/tblHelp" />
+      <nestedChildShapes>
+        <elementListCompartment Id="2a884664-3b17-4e23-a60d-abfcd774da2d" absoluteBounds="3.515, 1.585, 1.9700000000000002, 1.0185953776041665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="0728d948-b046-4e11-9217-fff7a52007df" absoluteBounds="6.75, 10.75, 2, 1.9631982421874987">
+      <DataClassMoniker Name="/ModikhanaDataDataContext/tblNew" />
+      <nestedChildShapes>
+        <elementListCompartment Id="c484b26a-fba3-42f1-b332-a35eab89dd84" absoluteBounds="6.765, 11.21, 1.9700000000000002, 1.4031982421875" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="727f5906-995c-4abf-901c-61e15143be67" absoluteBounds="9.75, 10.75, 2, 2.3478011067708344">
+      <DataClassMoniker Name="/ModikhanaDataDataContext/tblOnlineBankInfo" />
+      <nestedChildShapes>
+        <elementListCompartment Id="7804afcb-c2e5-46ad-8887-ec99cdd922df" absoluteBounds="9.765, 11.21, 1.9700000000000002, 1.7878011067708335" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="532fd183-87fb-4bbf-b47c-c7f13a3bc120" absoluteBounds="12.75, 0.75, 2, 1.9631982421875003">
+      <DataClassMoniker Name="/ModikhanaDataDataContext/tblOurWork" />
+      <nestedChildShapes>
+        <elementListCompartment Id="60e57170-6b75-4355-b440-f2dca9d57ab6" absoluteBounds="12.765, 1.21, 1.9700000000000002, 1.4031982421875" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="59025c2f-9963-42d4-ac2c-472dbbec5c35" absoluteBounds="12.75, 3.75, 2, 1.9631982421875005">
+      <DataClassMoniker Name="/ModikhanaDataDataContext/tblPaymentGatewayDetail" />
+      <nestedChildShapes>
+        <elementListCompartment Id="4bcd415f-a696-416f-9443-71f7a1bb8ca4" absoluteBounds="12.765, 4.21, 1.9700000000000002, 1.4031982421875" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="8bbdc3a2-fb1b-4c66-9523-c446c3a57b63" absoluteBounds="12.75, 6.75, 2, 2.1554996744791666">
+      <DataClassMoniker Name="/ModikhanaDataDataContext/tblPayPalReceipt" />
+      <nestedChildShapes>
+        <elementListCompartment Id="21479d65-3e00-4791-a930-616e1a71bf62" absoluteBounds="12.765, 7.21, 1.9700000000000002, 1.5954996744791665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="bb494fe8-6a03-4f2d-adea-b05ac3975cc3" absoluteBounds="12.75, 9.75, 2, 1.5785953776041666">
+      <DataClassMoniker Name="/ModikhanaDataDataContext/tblSupposer" />
+      <nestedChildShapes>
+        <elementListCompartment Id="bbe8150e-e4c6-494d-b3fc-284a2ed07cec" absoluteBounds="12.765, 10.21, 1.9700000000000002, 1.0185953776041665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="98557ef9-d5ed-469e-832a-c1100bb89ad3" absoluteBounds="3.5, 3.5, 2, 1.7708968098958327">
+      <DataClassMoniker Name="/ModikhanaDataDataContext/tblTopicComment" />
+      <nestedChildShapes>
+        <elementListCompartment Id="9445195c-da04-49ff-b053-6335d7f706a4" absoluteBounds="3.515, 3.96, 1.9700000000000002, 1.2108968098958333" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <associationConnector edgePoints="[(1.75 : 6.37660970052083); (1.75 : 7.16990447135417); (3.5 : 7.16990447135417)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/ModikhanaDataDataContext/tblUser/tblUser_tblDiscussionTopic" />
+      <nodes>
+        <classShapeMoniker Id="1a10cf42-e9c0-4b5f-83d7-07364d7906a5" />
+        <classShapeMoniker Id="44229ac7-0b70-4a15-958e-0f84ad58f85b" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(1.75 : 2.875); (1.75 : 1.91429768880208); (3.5 : 1.91429768880208)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/ModikhanaDataDataContext/tblUser/tblUser_tblHelp" />
+      <nodes>
+        <classShapeMoniker Id="1a10cf42-e9c0-4b5f-83d7-07364d7906a5" />
+        <classShapeMoniker Id="e017f3dd-aabb-4989-a5bc-3634f159fe61" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(2.75 : 4.38544840494792); (3.5 : 4.38544840494792)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/ModikhanaDataDataContext/tblUser/tblUser_tblTopicComment" />
+      <nodes>
+        <classShapeMoniker Id="1a10cf42-e9c0-4b5f-83d7-07364d7906a5" />
+        <classShapeMoniker Id="98557ef9-d5ed-469e-832a-c1100bb89ad3" />
+      </nodes>
+    </associationConnector>
+  </nestedChildShapes>
+</ordesignerObjectsDiagram>

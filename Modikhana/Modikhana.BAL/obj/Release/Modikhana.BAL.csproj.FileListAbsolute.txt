@@ -1,0 +1,7 @@
+F:\Project Work\Project\2014-2015\DotNetProject\Modikhana\Modikhana\Modikhana.BAL\bin\Release\Modikhana.BAL.dll
+F:\Project Work\Project\2014-2015\DotNetProject\Modikhana\Modikhana\Modikhana.BAL\bin\Release\Modikhana.BAL.pdb
+F:\Project Work\Project\2014-2015\DotNetProject\Modikhana\Modikhana\Modikhana.BAL\bin\Release\Modikhana.DAL.dll
+F:\Project Work\Project\2014-2015\DotNetProject\Modikhana\Modikhana\Modikhana.BAL\bin\Release\Modikhana.DAL.pdb
+F:\Project Work\Project\2014-2015\DotNetProject\Modikhana\Modikhana\Modikhana.BAL\obj\Release\Modikhana.BAL.csprojResolveAssemblyReference.cache
+F:\Project Work\Project\2014-2015\DotNetProject\Modikhana\Modikhana\Modikhana.BAL\obj\Release\Modikhana.BAL.dll
+F:\Project Work\Project\2014-2015\DotNetProject\Modikhana\Modikhana\Modikhana.BAL\obj\Release\Modikhana.BAL.pdb
